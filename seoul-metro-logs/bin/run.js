@@ -3,7 +3,7 @@ var parse = require('csv-parse');
 var s_meta = require('./stations_meta');
 
 //분석할 파일 이름 정확히 기입
-var f1to4 = fs.readFileSync('source/metro_log_2018.csv', 'utf8');
+var f1to4 = fs.readFileSync('source/seoul-metro-2018.csv', 'utf8');
 
 parse(f1to4, {comment:"#"}, function(csv_err, csv_data){
   if (csv_err) {
